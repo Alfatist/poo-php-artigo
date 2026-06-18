@@ -1,5 +1,4 @@
 <?php 
-require_once "./classes/temas.php";
 
 $ehParaExibirPersonagem = isset($_POST['arma']) && isset($_POST['armadura']);
 
@@ -9,10 +8,6 @@ $fabrica = null;
 
 switch ($temaEscolhido) {
 
-  case 'medieval':
-  $fabrica = new FabricaMedieval("./imagens/");
-  break;
-  
   default:
     echo "<script>
                 alert('Desculpe, tema não implementado ainda.');
